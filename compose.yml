@@ -1,16 +1,16 @@
 ---
 version: "3"
 services:
- devopsdb:
-   container_name: devopsdb
-   image: saikumar1817/project:db
-   ports:
-     - "3306:3306"
+     devopsdb:
+       container_name: devopsdb
+       image: saikumar1817/project:db
+       ports:
+        - "3306:3306"
 
- application:
-   container_name: appcontainer
-   image: saikumar1817/project:app
-   ports:
-     - "1235:8080"
-   depends_on:
-     - "devopsdb"
+     application:
+       container_name: appcontainer
+       image: saikumar1817/project:app
+       ports:
+        - "1235:8080"
+       depends_on:
+        - "devopsdb"
