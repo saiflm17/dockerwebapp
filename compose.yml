@@ -8,8 +8,9 @@ services:
           - "3306:3306"
 
      application:
+         container_name: application
          image: saikumar1817/project:app
          ports:
-          - 8080
+          - "9999:8080"
          depends_on:
           - "devopsdb"
