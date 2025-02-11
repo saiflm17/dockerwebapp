@@ -11,6 +11,6 @@ services:
          container_name: application
          image: saikumar1817/repo100:v2
          ports:
-          - "9999:8080"
+          - "8080:8080"
          depends_on:
           - "devopsdb"
