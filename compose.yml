@@ -2,11 +2,13 @@
 version: "3"
 services:
      devopsdb:
+         container_name: devopsdb
          image: saikumar1817/ourproject:db1
          ports:
           - "3306:3306"
 
      application:
+         container_name: application
          image: saikumar1817/ourproject:app1
          ports:
           - "8083:8080"
