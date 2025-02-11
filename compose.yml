@@ -3,13 +3,13 @@ version: "3"
 services:
      devopsdb:
          container_name: devopsdb
-         image: saikumar1817/project:db
+         image: saikumar1817/repo99:v1
          ports:
           - "3306:3306"
 
      application:
          container_name: application
-         image: saikumar1817/project:app
+         image: saikumar1817/repo:v1
          ports:
           - "9999:8080"
          depends_on:
